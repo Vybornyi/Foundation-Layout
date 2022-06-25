@@ -1,0 +1,96 @@
+.order {
+  width: 320px;
+  height: 827px;
+  background-color: #f4f5f7;
+  padding: 50px 15px 0 15px;
+  @include large-screen {
+    width: 1400px;
+    height: 441px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  & .order__img {
+    display: block;
+    margin-top: 50px;
+    width: 200px;
+    height: 220px;
+    margin: auto;
+    @include large-screen {
+      width: 269px;
+      height: 296px;
+      margin-left: 224px;
+    }
+  }
+  & .order-wrap {
+    @include large-screen {
+      width: 555px;
+      margin-right: 230px;
+    }
+    & .order__title {
+      text-align: center;
+      font-size: 39px;
+      margin-top: 40px;
+      @include large-screen {
+        text-align: start;
+        margin: 0;
+      }
+    }
+    & .order_text {
+      margin-top: 18px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 32px;
+      @include large-screen {
+        text-align: start;
+        margin-top: 12px;
+      }
+    }
+    & .order__form {
+      @include large-screen {
+        display: flex;
+        margin-top: 26px;
+        justify-content: space-between;
+      }
+      & .order-form__input {
+        width: 290px;
+        height: 48px;
+        border: 1px solid rgba(43, 41, 45, 0.2);
+        border-radius: 2px;
+        font-size: 18px;
+        line-height: 13px;
+        text-align: center;
+        color: #2b292d;
+        margin-top: 80px;
+        @include large-screen {
+          width: 385px;
+          margin: 0;
+        }
+      }
+      & .order-form__button {
+        width: 290px;
+        margin-top: 12px;
+        @include large-screen {
+          width: 160px;
+          margin: 0;
+        }
+      }
+    }
+    & .order-terms {
+      margin-top: 10px;
+      width: 290px;
+      height: 44px;
+      @include large-screen{
+        width: 495px;
+        height: 22px;
+      }
+      & .order-terms__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(43, 41, 45, 0.6);
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.top-section {
+  height: 890px;
+  width: 320px;
+  background-color: #f3c6bd;
+  @include large-screen {
+    height: 710px;
+    width: 1400px;
+    padding-top: 39px;
+    position: relative;
+  }
+}
+.headline {
+  @include large-screen {
+    height: 456px;
+    width: 1249px;
+    margin: 76px 25px 77px 126px;
+  }
+  & .headline-wrap {
+    padding: 35px 15px 0 15px;
+    @include large-screen {
+      padding: 0;
+    }
+    & .headline_title {
+      font-size: 50px;
+      position: relative;
+      z-index: 3;
+      @include large-screen {
+        font-size: 80px;
+        width: 754px;
+        height: 165px;
+        line-height: 78px;
+      }
+    }
+    & .headline_text {
+      line-height: 34px;
+      font-weight: 400px;
+      margin-top: 24px;
+      position: relative;
+      z-index: 3;
+      @include large-screen {
+        width: 456px;
+        height: 102px;
+        line-height: 34px;
+        font-size: 24px;
+        margin-top: 34px;
+
+      }
+    }
+
+    & .headline_button-get-started {
+      margin-top: 30px;
+      width: 290px;
+      position: relative;
+      z-index: 3;
+      @include large-screen {
+        margin-top: 58px;
+        width: 160px;
+      }
+    }
+    & .headline_button-learn-more {
+      background-color: #fff;
+      color: #3040c4;
+      width: 290px;
+      height: 48px;
+      border-radius: 2px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 13px;
+      margin-top: 15px;
+      position: relative;
+      z-index: 3;
+      @include large-screen {
+        margin-top: 58px;
+        width: 158px;
+      }
+    }
+  }
+  & .headline__img {
+    width: 320px;
+    margin-top: 33px;
+    @include large-screen {
+      position: absolute;
+      width: 796px;
+      height: 448px;
+      right: 25px;
+      bottom: 77px;
+      z-index: 2;
+    }
+  }
+}
