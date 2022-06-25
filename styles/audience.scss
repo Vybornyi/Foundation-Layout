@@ -75,6 +75,7 @@
     }
   }
   & .audiense_galary {
+    margin-top: 40px;
     @include large-screen {
       display: flex;
       flex-direction: row;
@@ -93,7 +94,7 @@
       width: 290px;
       height: 300px;
       padding: 22px 0 33px 0;
-      &:nth-child(2) {
+      &:hover {
         background-color: #3141c5;
         color: white;
       }

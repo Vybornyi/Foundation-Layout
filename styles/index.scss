@@ -5,25 +5,3 @@
 @import 'order.scss';
 @import 'audience.scss';
 @import 'footer.scss';
-*{
-    box-sizing: border-box;
-}
-
-h1,h2,h3,p{
-    margin: 0;
-}
-ul,li {
-    padding: 0;
-    list-style-type: none;
-     margin: 0;
-}
-.page{
-    margin: auto;
-    font-size: 24px;
-    font-family: Work sans;
-}
-.user-card__text{
-    font-weight: 700;
-    font-size: 22px;
-    margin-top: 22px;
-}

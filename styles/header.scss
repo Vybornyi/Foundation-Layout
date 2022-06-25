@@ -14,92 +14,79 @@
     height: 62px;
     background-color: #f3c6bd;
   }
+  & .logo {
+    display: flex;
+    align-items: center;
+    min-width: 261px;
 
-  & .navigation-arrow {
-    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
-    margin-left: 11px;
-    position: absolute;
-    display: none;
-    width: 7px;
-    height: 5px;
-    margin-top: 12px;
-    @include large-screen {
-      display: inline-block;
+    & .logo__image {
+      width: 48px;
+      height: 48px;
+      margin-left: 15px;
+      @include large-screen {
+        margin-left: 0px;
+      }
+    }
+    & .logo-text {
+      & .logo__name {
+        font-weight: 700;
+        margin-left: 13px;
+        margin-right: 74px;
+        font-size: 20px;
+        line-height: 25px;
+        @include large-screen {
+          margin-left: 0;
+        }
+      }
+      & .logo__description {
+        display: none;
+        @include large-screen {
+          display: block;
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
     }
   }
 
-  & .header-button {
-    width: 160px;
-    right: 0px;
+  & .navigation {
     display: none;
+    width: 273px;
+    height: 25px;
+    margin-right: 75px;
+    margin-left: 335px;
     @include large-screen {
       display: block;
     }
-  }
-}
+    & .navigation-list {
+      margin-top: 7px;
+      display: flex;
+      justify-content: space-between;
 
-.logo-text {
-  margin-left: 15px;
-}
-
-.logo__description {
-  display: none;
-  @include large-screen {
-    display: block;
-    font-size: 18px;
-    line-height: 25px;
-  }
-}
-.navigation {
-  display: none;
-  width: 273px;
-  height: 25px;
-  margin-right: 75px;
-  margin-left: 335px;
-  & .navigation-list {
-    margin-top: 7px;
-    display: flex;
-    justify-content: space-between;
-
-    & .navigation-list__item {
-      font-size: 18px;
-      line-height: 25px;
-    }
-    & .navigation-list__item_selected {
-      font-weight: 700;
+      & .navigation-list__item {
+        font-size: 18px;
+        line-height: 25px;
+        & .navigation-arrow {
+          background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+          margin-left: 11px;
+          position: absolute;
+          display: none;
+          width: 7px;
+          height: 5px;
+          margin-top: 12px;
+          @include large-screen {
+            display: inline-block;
+          }
+        }
+      }
+      & .navigation-list__item_selected {
+        font-weight: 700;
+      }
     }
   }
-  @include large-screen {
-    display: block;
-  }
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  min-width: 261px;
-}
-.logo__image {
-  width: 48px;
-  height: 48px;
-  margin-left: 15px;
-  @include large-screen {
-    margin-left: 0px;
-  }
-}
-.logo__name {
-  font-weight: 700;
-  margin-left: 13px;
-  margin-right: 74px;
-  font-size: 20px;
-  line-height: 25px;
-  @include large-screen {
-    margin-left: 0;
-  }
-}
-.logo-header {
+  & .logo-header {
   right: 0;
-  width: 57px;
+  width: 58px;
   height: 64px;
   border-left: 1px solid #000000;
   opacity: 15%;
@@ -116,3 +103,14 @@
     display: none;
   }
 }
+
+  & .header-button {
+    width: 160px;
+    right: 0px;
+    display: none;
+    @include large-screen {
+      display: block;
+    }
+  }
+}
+
