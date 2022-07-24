@@ -1,7 +1,7 @@
 .footer {
-  width: 320px;
   padding-top: 40px;
   padding-bottom: 23px;
+  width: 320px;
   @include large-screen {
     padding: 0;
     width: 1400px;
@@ -10,17 +10,16 @@
   & .footer-navigation {
     @include large-screen {
       display: flex;
-
       height: 339px;
     }
     & .about-company {
       height: 282px;
       border-bottom: 1px solid #e3e3e3;
       @include large-screen {
-        width: 360px;
-        border: none;
         margin-left: 129px;
         margin-top: 43px;
+        width: 360px;
+        border: none;
       }
 
       & .footer-logo {
@@ -28,72 +27,70 @@
         flex-direction: column;
         align-items: center;
         @include large-screen {
+          flex-direction: row;
           width: 299px;
           height: 60px;
-          flex-direction: row;
         }
-      }
-      & .footer-logo__img {
-        width: 60px;
-        height: 60px;
-      }
-      & .footer-logo__text {
-        width: 290px;
-        height: 51px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        @include large-screen {
-          width: 222px;
+        &__img {
+          width: 60px;
+          height: 60px;
+        }
+        &__text {
+          margin-top: 20px;
+          margin-bottom: 30px;
+          width: 290px;
           height: 51px;
-          flex-direction: row;
-          margin: 0 0 0 15px;
+          @include large-screen {
+            flex-direction: row;
+            margin: 0 0 0 15px;
+            width: 222px;
+            height: 51px;
+          }
         }
-      }
-      & .footer-logo__name {
-        font-size: 20px;
-
-        font-weight: 700;
-        text-align: center;
-        line-height: 25px;
-        @include large-screen {
-          text-align: start;
+        &__name {
+          font-size: 20px;
+          font-weight: 700;
+          text-align: center;
+          line-height: 25px;
+          @include large-screen {
+            text-align: start;
+          }
         }
-      }
-      & .footer-logo__discription {
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-        line-height: 25px;
+        &__discription {
+          font-size: 18px;
+          font-weight: 400;
+          text-align: center;
+          line-height: 25px;
+        }
       }
       & .company_description {
         display: none;
+        margin-top: 26px;
         height: 85px;
         width: 360px;
         font-size: 18px;
         line-height: 26px;
         color: #2b292d;
         opacity: 0.6;
-        margin-top: 26px;
         @include large-screen {
           display: block;
         }
       }
 
       & .downloads {
-        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
         margin: auto;
         width: 261px;
         height: 40px;
-        display: flex;
-        justify-content: space-between;
         @include large-screen {
           margin: 25px 0 0 0;
         }
-        &.downloads__appstore {
+        &__appstore {
           width: 135px;
           height: 40px;
         }
-        &.downloads__googleplay {
+        &__googleplay {
           width: 116px;
           height: 40px;
         }
@@ -106,7 +103,7 @@
         margin-top: 60px;
         width: 559px;
       }
-      & .additional-navigation__block {
+      &__block {
         margin-top: 30px;
         margin-left: 15px;
         @include large-screen {
@@ -114,8 +111,8 @@
         }
 
         & .nav-links__title {
-          font-size: 22px;
           margin-bottom: 18px;
+          font-size: 22px;
         }
         & .nav-links__list {
           margin: 0 0 30px 0;
@@ -124,23 +121,26 @@
             margin: 0;
             width: 279px;
           }
-          .nav-links__list-item {
+          &-item {
             font-size: 18px;
-            line-height: 30px;
+            line-height: 35px;
             color: #2b292d;
             opacity: 0.6;
+            & .nav-links__link {
+              color: #2b292d;
+            }
           }
         }
       }
     }
   }
   & .footer__links {
-    width: 180px;
-    height: 68px;
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 180px;
+    height: 68px;
+    padding-left: 15px;
     @include large-screen {
       flex-direction: row;
       align-items: center;
@@ -159,24 +159,24 @@
         width: 97px;
       }
 
-      & .social-links_twitter {
+      &_twitter {
         width: 21px;
         height: 16px;
       }
-      & .social-links_facebook {
+      &_facebook {
         width: 18px;
         height: 17px;
       }
-      & .social-links_linkedin {
+      &_linkedin {
         width: 18px;
         height: 17px;
       }
     }
     .footer__terms {
-      width: 180px;
-      height: 22px;
       display: flex;
       justify-content: space-between;
+      width: 180px;
+      height: 22px;
       @include large-screen {
         margin-left: 130px;
       }
@@ -186,6 +186,7 @@
         line-height: 22px;
         color: #2b292d;
         text-decoration: none;
+        opacity: 60%;
       }
     }
   }

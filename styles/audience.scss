@@ -1,92 +1,91 @@
 .audience {
+  padding: 50px 15px 0 15px;
   width: 320px;
   height: 1808px;
   background-color: #edf8fb;
-  padding: 50px 15px 0 15px;
   color: #2b292d;
   text-align: center;
   @include large-screen {
-    width: 1400px;
-    height: 953px;
     display: flex;
     flex-direction: column;
     padding: 0;
+    width: 1400px;
+    height: 953px;
   }
-  & .audience__first-title {
+  &__first-title {
     font-size: 22px;
     line-height: 32px;
     @include large-screen {
       margin-top: 108px;
     }
   }
-  & .audience__second-title {
+  &__second-title {
+    margin-top: 17px;
     font-size: 40px;
     line-height: 40px;
-    margin-top: 17px;
     @include large-screen {
+      margin: 24px auto 0 auto;
       width: 555px;
       height: 112px;
       font-size: 56px;
       line-height: 56px;
-      margin: 24px auto 0 auto;
     }
   }
-  & .audience__text {
+  &__text {
+    margin-top: 18px;
     font-size: 24px;
     line-height: 34px;
-    margin-top: 18px;
     @include large-screen {
+      margin: 30px auto 0 auto;
       width: 555px;
       height: 72px;
       font-size: 24px;
       line-height: 34px;
-      margin: 30px auto 0 auto;
     }
   }
-
-  & .audience__button-block {
+  &__button-block {
     @include large-screen {
-      height: 48px;
-      width: 328px;
-      margin: 34px auto 0 auto;
       display: flex;
       justify-content: space-between;
+      margin: 34px auto 0 auto;
+      height: 48px;
+      width: 328px;
     }
     & .audience__button-get-started {
-      width: 290px;
       margin-top: 30px;
+      width: 290px;
       @include large-screen {
-        width: 160px;
         margin-top: 0;
+        width: 160px;
       }
     }
     & .audience__button-learn-more {
+      margin-top: 12px;
+      margin-bottom: 40p;
       width: 290px;
       height: 48px;
       font-size: 18px;
       font-weight: 700;
       background-color: #fff;
-      margin-top: 12px;
-      margin-bottom: 40p;
       @include large-screen {
         width: 158px;
         margin: 0;
       }
     }
   }
-  & .audiense_galary {
+  & .audiense__galary {
     margin-top: 40px;
     @include large-screen {
       display: flex;
+      justify-content: space-between;
       flex-direction: row;
+      margin: 111px auto 0 auto;
       width: 1139px;
       height: 300px;
-      justify-content: space-between;
-      margin: 111px auto 0 auto;
     }
     & .user-card {
-      background-color: #fff;
       margin-bottom: 15px;
+      background-color: #fff;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
         inset 0px 1px 0px rgba(255, 255, 255, 0.1);
       border-radius: 8px;
