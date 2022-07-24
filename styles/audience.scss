@@ -83,7 +83,6 @@
       height: 300px;
       justify-content: space-between;
       margin: 111px auto 0 auto;
-
     }
     & .user-card {
       background-color: #fff;
@@ -99,8 +98,8 @@
         color: white;
       }
       @include large-screen {
-            width: 262px;
-        }
+        width: 262px;
+      }
     }
   }
 }
