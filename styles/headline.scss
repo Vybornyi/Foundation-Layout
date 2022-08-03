@@ -1,11 +1,12 @@
+@import 'variables.scss';
 .top-section {
   height: 890px;
-  width: 320px;
+  max-width: $mb-width;
   background-color: #f3c6bd;
   @include large-screen {
     position: relative;
     height: 710px;
-    width: 1400px;
+    max-width: $dsk-width;
     padding-top: 39px;
   }
 }
@@ -20,7 +21,7 @@
     @include large-screen {
       padding: 0;
     }
-    & .headline_title {
+    & .headline__title {
       position: relative;
       font-size: 50px;
       z-index: 3;
@@ -32,7 +33,7 @@
         line-height: 78px;
       }
     }
-    & .headline_text {
+    & .headline__text {
       position: relative;
       z-index: 3;
       font-weight: 400px;
@@ -46,37 +47,37 @@
       }
     }
 
-    & .headline_button-get-started {
+    & .headline__button-get-started {
       z-index: 3;
       margin-top: 30px;
-      width: 290px;
+      max-width: 290px;
       position: relative;
       @include large-screen {
         margin-top: 58px;
         width: 160px;
       }
     }
-    & .headline_button-learn-more {
+    & .headline__button-learn-more {
       position: relative;
       z-index: 3;
       margin-top: 15px;
-      width: 290px;
+      max-width: 290px;
       height: 48px;
-      background-color: #fff;
-      color: #3040c4;
+      background-color: $light-color;
+      color: $blue-color;
       border-radius: 2px;
       font-weight: 700;
       font-size: 18px;
       line-height: 13px;
       @include large-screen {
         margin-top: 58px;
-        width: 158px;
+        max-width: 158px;
       }
     }
   }
   & .headline__img {
     margin-top: 33px;
-    width: 320px;
+    width: $mb-width;
     @include large-screen {
       position: absolute;
       width: 796px;

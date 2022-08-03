@@ -1,11 +1,12 @@
+@import 'variables.scss';
 @import 'breakpoints.scss';
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  background-color: #fff;
-  width: 320px;
+  background-color: $light-color;
+  width: $mb-width;
   height: 64px;
   @include large-screen {
     align-items: normal;
@@ -67,7 +68,7 @@
         font-size: 18px;
         line-height: 25px;
         &-link {
-          color: #2b292d;
+          color: $dark-color;
         }
         & .navigation-arrow {
           display: none;

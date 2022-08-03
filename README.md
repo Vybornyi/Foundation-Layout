@@ -1,4 +1,4 @@
-# gromcode-project-1
+# Foundation Layout
 
 https://vybornyi.github.io/gromcode-project-1/
 

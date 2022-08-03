@@ -1,15 +1,16 @@
+@import 'variables.scss';
 .audience {
   padding: 50px 15px 0 15px;
-  width: 320px;
+  width: $mb-width;
   height: 1808px;
-  background-color: #edf8fb;
-  color: #2b292d;
+  background-color: $bc-light;
+  color: $dark-color;
   text-align: center;
   @include large-screen {
     display: flex;
     flex-direction: column;
     padding: 0;
-    width: 1400px;
+    width: $dsk-width;
     height: 953px;
   }
   &__first-title {
@@ -85,7 +86,7 @@
     }
     & .user-card {
       margin-bottom: 15px;
-      background-color: #fff;
+      background-color: $light-color;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
         inset 0px 1px 0px rgba(255, 255, 255, 0.1);
       border-radius: 8px;
@@ -94,7 +95,7 @@
       padding: 22px 0 33px 0;
       &:hover {
         background-color: #3141c5;
-        color: white;
+        color: $light-color;
       }
       @include large-screen {
         width: 262px;

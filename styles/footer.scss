@@ -1,10 +1,11 @@
+@import 'variables.scss';
 .footer {
   padding-top: 40px;
   padding-bottom: 23px;
-  width: 320px;
+  width: $mb-width;
   @include large-screen {
     padding: 0;
-    width: 1400px;
+    width: $dsk-width;
     height: 389px;
   }
   & .footer-navigation {
@@ -70,7 +71,7 @@
         width: 360px;
         font-size: 18px;
         line-height: 26px;
-        color: #2b292d;
+        color: $dark-color;
         opacity: 0.6;
         @include large-screen {
           display: block;
@@ -124,10 +125,10 @@
           &-item {
             font-size: 18px;
             line-height: 35px;
-            color: #2b292d;
+            color: $dark-color;
             opacity: 0.6;
             & .nav-links__link {
-              color: #2b292d;
+              color: $dark-color;
             }
           }
         }
@@ -144,7 +145,7 @@
     @include large-screen {
       flex-direction: row;
       align-items: center;
-      width: 1400px;
+      width: $dsk-width;
       height: 50px;
       padding: 0;
       border-top: 1px solid #e3e3e3;
@@ -184,7 +185,7 @@
       & .terms__items {
         font-size: 14px;
         line-height: 22px;
-        color: #2b292d;
+        color: $dark-color;
         text-decoration: none;
         opacity: 60%;
       }

@@ -130,14 +130,14 @@
 
 .top-section {
   height: 890px;
-  width: 320px;
+  max-width: 320px;
   background-color: #f3c6bd;
 }
 @media screen and (min-width: 1400px) {
   .top-section {
     position: relative;
     height: 710px;
-    width: 1400px;
+    max-width: 1400px;
     padding-top: 39px;
   }
 }
@@ -157,21 +157,21 @@
     padding: 0;
   }
 }
-.headline-wrap .headline_title {
+.headline-wrap .headline__title {
   position: relative;
   font-size: 50px;
   z-index: 3;
   line-height: 50px;
 }
 @media screen and (min-width: 1400px) {
-  .headline-wrap .headline_title {
+  .headline-wrap .headline__title {
     font-size: 80px;
     width: 754px;
     height: 165px;
     line-height: 78px;
   }
 }
-.headline-wrap .headline_text {
+.headline-wrap .headline__text {
   position: relative;
   z-index: 3;
   font-weight: 400px;
@@ -179,30 +179,30 @@
   margin-top: 24px;
 }
 @media screen and (min-width: 1400px) {
-  .headline-wrap .headline_text {
+  .headline-wrap .headline__text {
     margin-top: 34px;
     width: 456px;
     height: 102px;
     font-size: 24px;
   }
 }
-.headline-wrap .headline_button-get-started {
+.headline-wrap .headline__button-get-started {
   z-index: 3;
   margin-top: 30px;
-  width: 290px;
+  max-width: 290px;
   position: relative;
 }
 @media screen and (min-width: 1400px) {
-  .headline-wrap .headline_button-get-started {
+  .headline-wrap .headline__button-get-started {
     margin-top: 58px;
     width: 160px;
   }
 }
-.headline-wrap .headline_button-learn-more {
+.headline-wrap .headline__button-learn-more {
   position: relative;
   z-index: 3;
   margin-top: 15px;
-  width: 290px;
+  max-width: 290px;
   height: 48px;
   background-color: #fff;
   color: #3040c4;
@@ -212,9 +212,9 @@
   line-height: 13px;
 }
 @media screen and (min-width: 1400px) {
-  .headline-wrap .headline_button-learn-more {
+  .headline-wrap .headline__button-learn-more {
     margin-top: 58px;
-    width: 158px;
+    max-width: 158px;
   }
 }
 .headline .headline__img {
@@ -230,6 +230,11 @@
     bottom: 77px;
     z-index: 2;
   }
+}
+
+html,
+body {
+  max-width: 100%;
 }
 
 * {
@@ -254,8 +259,12 @@ li {
   margin: 0;
 }
 
-.page {
-  margin: auto;
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
   font-size: 24px;
   font-family: Work sans;
   color: #2b292d;
@@ -281,7 +290,7 @@ button {
   font-weight: 700;
   font-size: 18px;
   line-height: 13px;
-  color: white;
+  color: #fff;
 }
 
 .order {
@@ -506,7 +515,7 @@ button {
 }
 .audience .audiense__galary .user-card:hover {
   background-color: #3141c5;
-  color: white;
+  color: #fff;
 }
 @media screen and (min-width: 1400px) {
   .audience .audiense__galary .user-card {
