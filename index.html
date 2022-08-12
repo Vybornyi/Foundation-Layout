@@ -1,221 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <div class="page">
-  <div class="sections">
-    <div class="top-section">
-      <!-- header -->
-      <header class="header">
-        <div class="logo">
-          <img class="logo__image"
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
-            alt="Header logo">
-          <div class="logo-text">
-            <div class="logo__name">Foundation</div>
-            <div class="logo__description">Startup landing template</div>
-          </div>
-        </div>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-list__item navigation-list__item_selected"><a class="navigation-list__item-link"
-                href="#">Home</a></li>
-            <li class="navigation-list__item"><a class="navigation-list__item-link" href="#">Stories</a></li>
-            <li class="navigation-list__item"><a class="navigation-list__item-link" href="#">Library</a><i
-                class="navigation-arrow"></i></li>
-          </ul>
-        </nav>
-
-        <div class="logo-header">
-          <div class="logo-header__rectangle"></div>
-          <div class="logo-header__rectangle"></div>
-          <div class="logo-header__rectangle"></div>
-        </div>
-        <button class="header-button button-action">Get started</button>
-      </header>
-
-      <!-- headline -->
-
-      <section class="headline">
-        <div class="headline-wrap">
-          <h1 class="headline__title">Build stunning websites & apps.</h1>
-          <p class="headline__text">Create live segments and target the right people for messages based on
-            their
-            behaviors.</p>
-          <div class="headline__button-block"></div>
-          <button class="button-action headline__button-get-started ">Get started</button>
-          <button class=" headline__button-learn-more">Learn More</button>
-        </div>
-        <img class="headline__img"
-          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
-          alt="Headline Banner">
-
-      </section>
-    </div>
-
-    <!-- audience -->
-    <section class="audience">
-
-
-      <h3 class="audience__first-title">Engage Visitors</h3>
-      <h2 class="audience__second-title">Understand your audience</h2>
-      <p class="audience__text">Early stage company? Eligible applicants get all of our products for just
-        $49 a month.
-      </p>
-      <div class="audience__button-block">
-        <button class="button-action audience__button-get-started">Get Started</button>
-        <button class="audience__button-learn-more">Learn More</button>
-      </div>
-
-
-      <div class="audiense__galary">
-        <div class="user-card">
-          <img class="user-card_developers-logo"
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png"
-            alt="Developers">
-          <p class="user-card__text">Developers
-          </p>
-        </div>
-        <div class="user-card">
-          <img class="user-card_entertainment-logo"
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png"
-            alt="Entertainment">
-          <p class="user-card__text">Entertainment
-          </p>
-        </div>
-        <div class="user-card">
-          <img class="user-card_atheles-logo"
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png"
-            alt="Atheles">
-          <p class="user-card__text">Athletes
-          </p>
-        </div>
-        <div class="user-card">
-          <img class="user-card_creators-logo"
-            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png"
-            alt="Creators">
-          <p class="user-card__text">Creators
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- order -->
-    <section class="order">
-      <img class="order__img"
-        src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png"
-        alt="Order Banner">
-
-      <div class="order-wrap">
-        <h2 class="order__title">Start your free trial.</h2>
-        <p class="order_text">Get notified about company updates, news and blog posts. We hate spam.</p>
-
-        <form class="order__form">
-          <input class="order-form__input" type="email" id="email" name="email" placeholder="Enter your email">
-          <button class="button-action order-form__button">Get Started</button>
-        </form>
-        <div class="order-terms">
-          <p class="order-terms__text">Free 14-day trial · Easy setup · Cancel any time. Check out <a href="#">Terms of
-              Use.</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-
-    <footer class="footer">
-      <div class="footer-navigation">
-        <div class="about-company">
-          <div class="footer-logo">
-            <img class="footer-logo__img"
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png"
-              alt="logo">
-            <div class="footer-logo__text">
-              <div class="footer-logo__name">
-                Foundation
-              </div>
-              <div class="footer-logo__discription">Startup landing template</div>
+  <body>
+    <div class="sections">
+      <div class="top-section">
+        <!-- header -->
+        <header class="header">
+          <div class="logo">
+            <img
+              class="logo__image"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png"
+              alt="Header logo"
+            />
+            <div class="logo-text">
+              <div class="logo__name">Foundation</div>
+              <div class="logo__description">Startup landing template</div>
             </div>
-
           </div>
-          <div class="company_description">
-            Foundation is a website template for startups and small teams. It helps to build a website
-            in no time.
-          </div>
-          <div class="downloads">
-            <a href="https://www.apple.com/ua/app-store/"><img class="downloads__appstore"
-                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png"
-                alt="App Store icon"></a>
-            <a href="https://play.google.com/"><img class="downloads__googleplay"
-                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png"
-                alt="Google play icon"></a>
-          </div>
-        </div>
-
-        <div class="additional-navigation">
-          <div class="additional-navigation__block">
-            <h3 class="nav-links__title">Product</h3>
-            <ul class="nav-links__list">
-              <li class="nav-links__list-item"><a class="nav-links__link" href="#">Acquire Users</a></li>
-              <li class="nav-links__list-item"><a class="nav-links__link" href="#">Content Marketing</a></li>
-              <li class="nav-links__list-item"><a class="nav-links__link" href="#">Website Templates</a></li>
-              <li class="nav-links__list-item"><a class="nav-links__link" href="#">Customer Management</a></li>
-              <li class="nav-links__list-item"><a class="nav-links__link" href="#">Virtual Inbox</a></li>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list__item navigation-list__item_selected">
+                <a class="navigation-list__item-link" href="#">Home</a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__item-link" href="#">Stories</a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation-list__item-link" href="#">Library</a
+                ><i class="navigation-arrow"></i>
+              </li>
             </ul>
-
+          </nav>
+          <div class="logo-header">
+            <div class="logo-header__rectangle"></div>
+            <div class="logo-header__rectangle"></div>
+            <div class="logo-header__rectangle"></div>
           </div>
-          <div class="additional-navigation__block">
-            <h3 class="nav-links__title">Company</h3>
-            <ul class="nav-links__list">
-              <li class="nav-links__list-item"><a class="nav-links__link" href="#">About Foundation</a></li>
-              <li class="nav-links__list-item"><a class="nav-links__link" href="#">Brand Guidelines</a></li>
-              <li class="nav-links__list-item"><a class="nav-links__link" href="#">Press Kit</a></li>
-              <li class="nav-links__list-item"><a class="nav-links__link" href="#">Support</a></li>
-            </ul>
+          <button class="header-button button-action">Get started</button>
+        </header>
+
+        <!-- headline -->
+
+        <section class="headline">
+          <div class="headline-wrap">
+            <h1 class="headline__title">Build stunning websites & apps.</h1>
+            <p class="headline__text">
+              Create live segments and target the right people for messages based on their
+              behaviors.
+            </p>
+            <div class="headline__button-block"></div>
+            <button class="button-action headline__button-get-started">Get started</button>
+            <button class="headline__button-learn-more">Learn More</button>
+          </div>
+          <img
+            class="headline__img"
+            src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
+            alt="Headline Banner"
+          />
+        </section>
+      </div>
+      <!-- audience -->
+      <section class="audience">
+        <h3 class="audience__first-title">Engage Visitors</h3>
+        <h2 class="audience__second-title">Understand your audience</h2>
+        <p class="audience__text">
+          Early stage company? Eligible applicants get all of our products for just $49 a month.
+        </p>
+        <div class="audience__button-block">
+          <button class="button-action audience__button-get-started">Get Started</button>
+          <button class="audience__button-learn-more">Learn More</button>
+        </div>
+
+        <div class="audiense__galary">
+          <div class="user-card">
+            <img
+              class="user-card_developers-logo"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png"
+              alt="Developers"
+            />
+            <p class="user-card__text">Developers</p>
+          </div>
+          <div class="user-card">
+            <img
+              class="user-card_entertainment-logo"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png"
+              alt="Entertainment"
+            />
+            <p class="user-card__text">Entertainment</p>
+          </div>
+          <div class="user-card">
+            <img
+              class="user-card_atheles-logo"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png"
+              alt="Atheles"
+            />
+            <p class="user-card__text">Athletes</p>
+          </div>
+          <div class="user-card">
+            <img
+              class="user-card_creators-logo"
+              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png"
+              alt="Creators"
+            />
+            <p class="user-card__text">Creators</p>
           </div>
         </div>
+      </section>
 
-      </div>
-      <div class="footer__links">
-        <div class="footer__terms">
-          <a class="terms__items" href="#">Terms</a>
-          <a class="terms__items" href="#">Privacy</a>
-          <a class="terms__items" href="#">License</a>
+      <!-- order -->
+      <section class="order">
+        <img
+          class="order__img"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png"
+          alt="Order Banner"
+        />
+
+        <div class="order-wrap">
+          <h2 class="order__title">Start your free trial.</h2>
+          <p class="order_text">
+            Get notified about company updates, news and blog posts. We hate spam.
+          </p>
+          <form class="order__form">
+            <input
+              class="order-form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <button class="button-action order-form__button">Get Started</button>
+          </form>
+          <div class="order-terms">
+            <p class="order-terms__text">
+              Free 14-day trial · Easy setup · Cancel any time. Check out
+              <a href="#">Terms of Use.</a>
+            </p>
+          </div>
         </div>
-        <div class="social-links">
+      </section>
 
-          <a class="social-links_twitter" href="https://twitter.com" target="_blank"><img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png"
-              alt="Twitter Link"></a>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-navigation">
+          <div class="about-company">
+            <div class="footer-logo">
+              <img
+                class="footer-logo__img"
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png"
+                alt="logo"
+              />
+              <div class="footer-logo__text">
+                <div class="footer-logo__name">Foundation</div>
+                <div class="footer-logo__discription">Startup landing template</div>
+              </div>
+            </div>
+            <div class="company_description">
+              Foundation is a website template for startups and small teams. It helps to build a
+              website in no time.
+            </div>
+            <div class="downloads">
+              <a href="https://www.apple.com/ua/app-store/"
+                ><img
+                  class="downloads__appstore"
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png"
+                  alt="App Store icon"
+              /></a>
+              <a href="https://play.google.com/"
+                ><img
+                  class="downloads__googleplay"
+                  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png"
+                  alt="Google play icon"
+              /></a>
+            </div>
+          </div>
 
-          <a class="social-links_facebook" href=" https://www.facebook.com" target="_blank"><img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png"
-              alt="Facebook link"></a>
-
-          <a class="social-links_linkedin" href="https://www.linkedin.com" target="_blank"><img
-              src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png"
-              alt="Linkedin Link"></a>
-
+          <div class="additional-navigation">
+            <div class="additional-navigation__block">
+              <h3 class="nav-links__title">Product</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links__list-item">
+                  <a class="nav-links__link" href="#">Acquire Users</a>
+                </li>
+                <li class="nav-links__list-item">
+                  <a class="nav-links__link" href="#">Content Marketing</a>
+                </li>
+                <li class="nav-links__list-item">
+                  <a class="nav-links__link" href="#">Website Templates</a>
+                </li>
+                <li class="nav-links__list-item">
+                  <a class="nav-links__link" href="#">Customer Management</a>
+                </li>
+                <li class="nav-links__list-item">
+                  <a class="nav-links__link" href="#">Virtual Inbox</a>
+                </li>
+              </ul>
+            </div>
+            <div class="additional-navigation__block">
+              <h3 class="nav-links__title">Company</h3>
+              <ul class="nav-links__list">
+                <li class="nav-links__list-item">
+                  <a class="nav-links__link" href="#">About Foundation</a>
+                </li>
+                <li class="nav-links__list-item">
+                  <a class="nav-links__link" href="#">Brand Guidelines</a>
+                </li>
+                <li class="nav-links__list-item">
+                  <a class="nav-links__link" href="#">Press Kit</a>
+                </li>
+                <li class="nav-links__list-item">
+                  <a class="nav-links__link" href="#">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  </div>
-</body>
+        <div class="footer__links">
+          <div class="footer__terms">
+            <a class="terms__items" href="#">Terms</a>
+            <a class="terms__items" href="#">Privacy</a>
+            <a class="terms__items" href="#">License</a>
+          </div>
+          <div class="social-links">
+            <a class="social-links_twitter" href="https://twitter.com" target="_blank"
+              ><img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png"
+                alt="Twitter Link"
+            /></a>
 
+            <a class="social-links_facebook" href=" https://www.facebook.com" target="_blank"
+              ><img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png"
+                alt="Facebook link"
+            /></a>
+
+            <a class="social-links_linkedin" href="https://www.linkedin.com" target="_blank"
+              ><img
+                src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png"
+                alt="Linkedin Link"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

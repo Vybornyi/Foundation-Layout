@@ -2,6 +2,9 @@
 html,
 body {
   max-width: 100%;
+  @include large-screen {
+    overflow-x: hidden;
+  }
 }
 * {
   box-sizing: border-box;

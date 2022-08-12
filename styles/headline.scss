@@ -50,7 +50,7 @@
     & .headline__button-get-started {
       z-index: 3;
       margin-top: 30px;
-      max-width: 290px;
+      width: 290px;
       position: relative;
       @include large-screen {
         margin-top: 58px;
@@ -61,7 +61,7 @@
       position: relative;
       z-index: 3;
       margin-top: 15px;
-      max-width: 290px;
+      width: 290px;
       height: 48px;
       background-color: $light-color;
       color: $blue-color;
@@ -71,7 +71,8 @@
       line-height: 13px;
       @include large-screen {
         margin-top: 58px;
-        max-width: 158px;
+        width: 158px;
+        display: inline-block;
       }
     }
   }
