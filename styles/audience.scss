@@ -43,36 +43,7 @@
       line-height: 34px;
     }
   }
-  &__button-block {
-    @include large-screen {
-      display: flex;
-      justify-content: space-between;
-      margin: 34px auto 0 auto;
-      height: 48px;
-      width: 328px;
-    }
-    &-get-started {
-      margin-top: 30px;
-      width: 290px;
-      @include large-screen {
-        margin-top: 0;
-        width: 160px;
-      }
-    }
-    &-learn-more {
-      margin-top: 12px;
-      margin-bottom: 40p;
-      width: 290px;
-      height: 48px;
-      font-size: 18px;
-      font-weight: 700;
-      background-color: #fff;
-      @include large-screen {
-        width: 158px;
-        margin: 0;
-      }
-    }
-  }
+
   &__galary {
     margin-top: 40px;
     @include large-screen {
@@ -99,6 +70,36 @@
       @include large-screen {
         width: 262px;
       }
+    }
+  }
+}
+.button-block {
+  @include large-screen {
+    display: flex;
+    justify-content: space-between;
+    margin: 34px auto 0 auto;
+    height: 48px;
+    width: 328px;
+  }
+  &__get-started {
+    margin-top: 30px;
+    width: 290px;
+    @include large-screen {
+      margin-top: 0;
+      width: 160px;
+    }
+  }
+  &__learn-more {
+    margin-top: 12px;
+    margin-bottom: 40p;
+    width: 290px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #fff;
+    @include large-screen {
+      width: 158px;
+      margin: 0;
     }
   }
 }

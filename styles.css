@@ -465,40 +465,6 @@ button {
     line-height: 34px;
   }
 }
-@media screen and (min-width: 1400px) {
-  .audience__button-block {
-    display: flex;
-    justify-content: space-between;
-    margin: 34px auto 0 auto;
-    height: 48px;
-    width: 328px;
-  }
-}
-.audience__button-block-get-started {
-  margin-top: 30px;
-  width: 290px;
-}
-@media screen and (min-width: 1400px) {
-  .audience__button-block-get-started {
-    margin-top: 0;
-    width: 160px;
-  }
-}
-.audience__button-block-learn-more {
-  margin-top: 12px;
-  margin-bottom: 40p;
-  width: 290px;
-  height: 48px;
-  font-size: 18px;
-  font-weight: 700;
-  background-color: #fff;
-}
-@media screen and (min-width: 1400px) {
-  .audience__button-block-learn-more {
-    width: 158px;
-    margin: 0;
-  }
-}
 .audience__galary {
   margin-top: 40px;
 }
@@ -528,6 +494,41 @@ button {
 @media screen and (min-width: 1400px) {
   .audience__galary .user-card {
     width: 262px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .button-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 34px auto 0 auto;
+    height: 48px;
+    width: 328px;
+  }
+}
+.button-block__get-started {
+  margin-top: 30px;
+  width: 290px;
+}
+@media screen and (min-width: 1400px) {
+  .button-block__get-started {
+    margin-top: 0;
+    width: 160px;
+  }
+}
+.button-block__learn-more {
+  margin-top: 12px;
+  margin-bottom: 40p;
+  width: 290px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #fff;
+}
+@media screen and (min-width: 1400px) {
+  .button-block__learn-more {
+    width: 158px;
+    margin: 0;
   }
 }
 
