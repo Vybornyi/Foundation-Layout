@@ -22,6 +22,7 @@
   min-width: 261px;
 }
 .header .logo__image {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png);
   margin-left: 15px;
   width: 48px;
   height: 48px;
@@ -157,21 +158,21 @@
     padding: 0;
   }
 }
-.headline-wrap .headline__title {
+.headline__title {
   position: relative;
   font-size: 50px;
   z-index: 3;
   line-height: 50px;
 }
 @media screen and (min-width: 1400px) {
-  .headline-wrap .headline__title {
+  .headline__title {
     font-size: 80px;
     width: 754px;
     height: 165px;
     line-height: 78px;
   }
 }
-.headline-wrap .headline__text {
+.headline__text {
   position: relative;
   z-index: 3;
   font-weight: 400px;
@@ -179,26 +180,26 @@
   margin-top: 24px;
 }
 @media screen and (min-width: 1400px) {
-  .headline-wrap .headline__text {
+  .headline__text {
     margin-top: 34px;
     width: 456px;
     height: 102px;
     font-size: 24px;
   }
 }
-.headline-wrap .headline__button-get-started {
+.headline__button-get-started {
   z-index: 3;
   margin-top: 30px;
   width: 290px;
   position: relative;
 }
 @media screen and (min-width: 1400px) {
-  .headline-wrap .headline__button-get-started {
+  .headline__button-get-started {
     margin-top: 58px;
     width: 160px;
   }
 }
-.headline-wrap .headline__button-learn-more {
+.headline__button-learn-more {
   position: relative;
   z-index: 3;
   margin-top: 15px;
@@ -212,18 +213,18 @@
   line-height: 13px;
 }
 @media screen and (min-width: 1400px) {
-  .headline-wrap .headline__button-learn-more {
+  .headline__button-learn-more {
     margin-top: 58px;
     width: 158px;
     display: inline-block;
   }
 }
-.headline .headline__img {
+.headline__img {
   margin-top: 33px;
   width: 320px;
 }
 @media screen and (min-width: 1400px) {
-  .headline .headline__img {
+  .headline__img {
     position: absolute;
     width: 796px;
     height: 448px;
@@ -473,17 +474,17 @@ button {
     width: 328px;
   }
 }
-.audience__button-block .audience__button-get-started {
+.audience__button-block-get-started {
   margin-top: 30px;
   width: 290px;
 }
 @media screen and (min-width: 1400px) {
-  .audience__button-block .audience__button-get-started {
+  .audience__button-block-get-started {
     margin-top: 0;
     width: 160px;
   }
 }
-.audience__button-block .audience__button-learn-more {
+.audience__button-block-learn-more {
   margin-top: 12px;
   margin-bottom: 40p;
   width: 290px;
@@ -493,16 +494,16 @@ button {
   background-color: #fff;
 }
 @media screen and (min-width: 1400px) {
-  .audience__button-block .audience__button-learn-more {
+  .audience__button-block-learn-more {
     width: 158px;
     margin: 0;
   }
 }
-.audience .audiense__galary {
+.audience__galary {
   margin-top: 40px;
 }
 @media screen and (min-width: 1400px) {
-  .audience .audiense__galary {
+  .audience__galary {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -511,7 +512,7 @@ button {
     height: 300px;
   }
 }
-.audience .audiense__galary .user-card {
+.audience__galary .user-card {
   margin-bottom: 15px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
@@ -520,12 +521,12 @@ button {
   height: 300px;
   padding: 22px 0 33px 0;
 }
-.audience .audiense__galary .user-card:hover {
+.audience__galary .user-card:hover {
   background-color: #3141c5;
   color: #fff;
 }
 @media screen and (min-width: 1400px) {
-  .audience .audiense__galary .user-card {
+  .audience__galary .user-card {
     width: 262px;
   }
 }
@@ -572,7 +573,9 @@ button {
     height: 60px;
   }
 }
-.footer .footer-navigation .about-company .footer-logo__img {
+.footer .footer-navigation .about-company .footer-logo__icon {
+  display: block;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png);
   width: 60px;
   height: 60px;
 }
@@ -635,54 +638,60 @@ button {
   }
 }
 .footer .footer-navigation .about-company .downloads__appstore {
+  display: block;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png);
   width: 135px;
   height: 40px;
 }
 .footer .footer-navigation .about-company .downloads__googleplay {
+  display: block;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png);
   width: 116px;
   height: 40px;
 }
+
 @media screen and (min-width: 1400px) {
-  .footer .footer-navigation .additional-navigation {
+  .additional-navigation {
     display: flex;
     margin-left: 126px;
     margin-top: 60px;
     width: 559px;
   }
 }
-.footer .footer-navigation .additional-navigation__block {
+.additional-navigation__column {
   margin-top: 30px;
   margin-left: 15px;
 }
 @media screen and (min-width: 1400px) {
-  .footer .footer-navigation .additional-navigation__block {
+  .additional-navigation__column {
     margin: 0;
   }
 }
-.footer .footer-navigation .additional-navigation__block .nav-links__title {
+.additional-navigation__title {
   margin-bottom: 18px;
   font-size: 22px;
 }
-.footer .footer-navigation .additional-navigation__block .nav-links__list {
+.additional-navigation__list {
   margin: 0 0 30px 0;
   width: 290px;
 }
 @media screen and (min-width: 1400px) {
-  .footer .footer-navigation .additional-navigation__block .nav-links__list {
+  .additional-navigation__list {
     margin: 0;
     width: 279px;
   }
 }
-.footer .footer-navigation .additional-navigation__block .nav-links__list-item {
+.additional-navigation__list-item {
   font-size: 18px;
   line-height: 35px;
   color: #2b292d;
   opacity: 0.6;
 }
-.footer .footer-navigation .additional-navigation__block .nav-links__list-item .nav-links__link {
+.additional-navigation__link {
   color: #2b292d;
 }
-.footer .footer__links {
+
+.footer-links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -691,7 +700,7 @@ button {
   padding-left: 15px;
 }
 @media screen and (min-width: 1400px) {
-  .footer .footer__links {
+  .footer-links {
     flex-direction: row;
     align-items: center;
     width: 1400px;
@@ -700,46 +709,51 @@ button {
     border-top: 1px solid #e3e3e3;
   }
 }
-.footer .footer__links .social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 117px;
-}
-@media screen and (min-width: 1400px) {
-  .footer .footer__links .social-links {
-    margin-right: 130px;
-    width: 97px;
-  }
-}
-.footer .footer__links .social-links_twitter {
-  width: 21px;
-  height: 16px;
-}
-.footer .footer__links .social-links_facebook {
-  width: 18px;
-  height: 17px;
-}
-.footer .footer__links .social-links_linkedin {
-  width: 18px;
-  height: 17px;
-}
-.footer .footer__links .footer__terms {
+.footer-links .terms {
   display: flex;
   justify-content: space-between;
   width: 180px;
   height: 22px;
 }
 @media screen and (min-width: 1400px) {
-  .footer .footer__links .footer__terms {
+  .footer-links .terms {
     margin-left: 130px;
   }
 }
-.footer .footer__links .footer__terms .terms__items {
+.footer-links .terms .terms__item {
   font-size: 14px;
   line-height: 22px;
   color: #2b292d;
   text-decoration: none;
   opacity: 60%;
+}
+.footer-links .social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 97px;
+}
+@media screen and (min-width: 1400px) {
+  .footer-links .social-links {
+    margin-right: 130px;
+  }
+}
+.footer-links .social-links__twitter-icon {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png);
+  width: 21px;
+  height: 16px;
+  display: block;
+}
+.footer-links .social-links__facebook-icon {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png);
+  width: 18px;
+  height: 16px;
+  display: block;
+}
+.footer-links .social-links__linkedin-icon {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
+  width: 18px;
+  height: 16px;
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */

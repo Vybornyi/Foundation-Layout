@@ -1,4 +1,3 @@
-@import 'variables.scss';
 .top-section {
   height: 890px;
   max-width: $mb-width;
@@ -21,62 +20,61 @@
     @include large-screen {
       padding: 0;
     }
-    & .headline__title {
-      position: relative;
-      font-size: 50px;
-      z-index: 3;
-      line-height: 50px;
-      @include large-screen {
-        font-size: 80px;
-        width: 754px;
-        height: 165px;
-        line-height: 78px;
-      }
-    }
-    & .headline__text {
-      position: relative;
-      z-index: 3;
-      font-weight: 400px;
-      line-height: 34px;
-      margin-top: 24px;
-      @include large-screen {
-        margin-top: 34px;
-        width: 456px;
-        height: 102px;
-        font-size: 24px;
-      }
-    }
-
-    & .headline__button-get-started {
-      z-index: 3;
-      margin-top: 30px;
-      width: 290px;
-      position: relative;
-      @include large-screen {
-        margin-top: 58px;
-        width: 160px;
-      }
-    }
-    & .headline__button-learn-more {
-      position: relative;
-      z-index: 3;
-      margin-top: 15px;
-      width: 290px;
-      height: 48px;
-      background-color: $light-color;
-      color: $blue-color;
-      border-radius: 2px;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 13px;
-      @include large-screen {
-        margin-top: 58px;
-        width: 158px;
-        display: inline-block;
-      }
+  }
+  &__title {
+    position: relative;
+    font-size: 50px;
+    z-index: 3;
+    line-height: 50px;
+    @include large-screen {
+      font-size: 80px;
+      width: 754px;
+      height: 165px;
+      line-height: 78px;
     }
   }
-  & .headline__img {
+  &__text {
+    position: relative;
+    z-index: 3;
+    font-weight: 400px;
+    line-height: 34px;
+    margin-top: 24px;
+    @include large-screen {
+      margin-top: 34px;
+      width: 456px;
+      height: 102px;
+      font-size: 24px;
+    }
+  }
+  &__button-get-started {
+    z-index: 3;
+    margin-top: 30px;
+    width: 290px;
+    position: relative;
+    @include large-screen {
+      margin-top: 58px;
+      width: 160px;
+    }
+  }
+  &__button-learn-more {
+    position: relative;
+    z-index: 3;
+    margin-top: 15px;
+    width: 290px;
+    height: 48px;
+    background-color: $light-color;
+    color: $blue-color;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    @include large-screen {
+      margin-top: 58px;
+      width: 158px;
+      display: inline-block;
+    }
+  }
+  &__img {
     margin-top: 33px;
     width: $mb-width;
     @include large-screen {

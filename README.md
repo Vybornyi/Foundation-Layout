@@ -1,6 +1,6 @@
 # Foundation Layout
 
-https://vybornyi.github.io/gromcode-project-1/
+https://vybornyi.github.io/Foundation-Layout/
 
 Layout supports mobile (320px) and desktop (1400px) versions
 
