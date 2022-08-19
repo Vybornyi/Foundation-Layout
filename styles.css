@@ -347,14 +347,14 @@ button {
     margin: 0;
   }
 }
-.order .order-wrap .order_text {
+.order .order-wrap .order__text {
   margin-top: 18px;
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
 }
 @media screen and (min-width: 1400px) {
-  .order .order-wrap .order_text {
+  .order .order-wrap .order__text {
     text-align: start;
     margin-top: 12px;
   }
